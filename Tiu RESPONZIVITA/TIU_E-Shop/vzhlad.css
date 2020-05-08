@@ -1,0 +1,609 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    background: url(BACKGROUND.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: block;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.logo {
+    margin-left: 300px;
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(10, 0, 0);
+}
+
+nav ul {
+    width: auto;
+    
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 17px 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.content {
+    background-color: white;
+    height: 1000px;
+    width: 1000px;
+    /*position: center;*/
+}
+
+nav ul li ul {
+    width: 80%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 7px;
+    left: 0;
+    right: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+    color: white;
+}
+
+nav ul li ul li {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+
+ }
+ 
+nav ul li ul li:hover {
+    background-color: red;
+    transition: 0.7s;
+}
+
+nav ul li ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li ul li a:hover {
+    color: white;
+    
+
+}
+
+
+
+
+
+/* BODY */
+
+
+
+
+
+main{
+    height: 2500px;
+    width: 960px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.mainlogo {
+    background: url(Pozadie.jpeg) no-repeat center;
+    background-size: 960px;
+    width: 100%;
+    display: block;
+    height: 250px; 
+}
+
+/*.navpas {
+    height: 80px;
+    width: relative;
+    background-color: black;
+    margin-top: -1765px;
+}*/
+
+.produkty {
+    display: grid;
+    margin: 80px 30px 30px 70px;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    height: auto;
+    width: 100%;
+
+}
+.produkty p {
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+sup {
+    text-decoration: line-through;
+    color: black;
+}
+
+strong {
+    font-family: 'Rubik', sans-serif;
+    color: red;
+}
+h3 {
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    margin-top: 0px;
+}
+
+.obrmenu {
+    margin-left: 15px;
+    margin-top: -3px;
+    height: 85px;
+    width: auto;
+    float: left;
+}
+
+.navpas ul li {
+    display: none;
+}
+
+.navpas ul li a {
+    display: none;
+}
+
+.obrmenu:hover + .navpas ul li a {
+    display: block;
+   
+}
+
+video {
+    margin-top: 30px;
+    margin-left: 275px;
+
+}
+
+
+/*kontakt*/
+
+
+
+.kontakt {
+    height: 1200px;
+}
+
+
+
+/* FOOTER */
+
+
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    padding: 8px;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+footer i {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  footer i:hover {
+    color: red;
+    transform: translateY(-2px);
+  }
+
+
+.tlacidlohore {
+    color: black;
+}
+
+
+
+/* HTML SUBOR INFO */
+
+
+.infomain {
+    height: 1000px;
+}
+
+h4 {
+    position: relative;
+    align-content: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+.Infotextblock {
+    text-align: left;
+    float: left;
+    clear: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Infotextblock h3 {
+    font-size: 60px;
+
+}
+
+
+
+/* HTML SUBORY SHOP */
+
+
+
+
+
+.shop {
+    height: 1000px;
+}
+
+.shop_img img{
+    padding-left: 50px;
+    padding-top: 35px;
+    float: left;
+    width: 350px;
+
+
+}
+
+.title_tricko{
+    align-content: center;
+    float: right;
+    margin-right: 18%;
+    margin-top: 25px;
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.title_mikina{
+    align-content: center;
+    float: right;
+    margin-right: 20%;
+    margin-top: 25px;
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.title_podlozka{
+    align-content: center;
+    float: right;
+    margin-right: 7%;
+    margin-top: 25px;
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.shop_kate{
+    font-family: 'Quicksand', sans-serif;
+    color: #777;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 400px;
+    padding-top: 120px;
+    
+
+}
+
+.buytlacitko {
+    box-shadow: 0px 10px 14px -7px rgb(172, 0, 0);
+    background:linear-gradient(to bottom, rgb(172, 0, 0) 5%, rgb(172, 0, 0) 100%);
+    background-color:rgb(172, 0, 0);
+    border-radius:4px;
+    border:1px solid rgb(172, 0, 0);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px rgb(172, 0, 0);
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.buytlacitko:hover {
+    background:linear-gradient(to bottom, rgb(200, 0, 0) 5%, rgb(200, 0, 0) 100%);
+    background-color:rgb(200, 0, 0);
+}
+
+.buytlacitko:active {
+    position:relative;
+    top:1px;
+}
+
+.small {
+    margin-left: 40px;
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+
+}
+
+.small:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.small:active {
+    position:relative;
+    top:1px;
+}
+
+.medium {
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+}
+
+.medium:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.medium:active {
+    position:relative;
+    top:1px;
+}
+
+.large {
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+}
+
+.large:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.large:active {
+    position:relative;
+    top:1px;
+}
+
+.Xlarge {
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+}
+
+.Xlarge:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.Xlarge:active {
+    position:relative;
+    top:1px;
+}
+
+
+.XXlarge {
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+}
+
+.XXlarge:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.XXlarge:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Small {
+    margin-left: 20px;
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 18px;
+    text-decoration:none;
+    
+
+}
+
+.Small:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.Small:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Medium {
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 18px;
+    text-decoration:none;
+    
+
+}
+
+.Medium:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.Medium:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Large {
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 18px;
+    text-decoration:none;
+    
+
+}
+
+.Large:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.Large:active {
+    position:relative;
+    top:1px;
+}
+
+.shop_text{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size:15px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+h6{
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size:25px;
+    color: rgb(172, 0, 0);
+    font-family: 'Rubik', sans-serif;
+
+}
+
+@media only screen and (max-width: 600px){
+
+    nav ul li ul {
+        padding-top: 6px;
+    }
+
+    .logo {
+        margin-left: 200px;
+    }
+
+}
