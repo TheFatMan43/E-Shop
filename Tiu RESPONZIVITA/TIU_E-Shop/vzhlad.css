@@ -10,12 +10,13 @@ body,html {
     width: 100%;
     display: block;
     scroll-behavior: smooth;
+    height: calc(100% - 60px);
 }
 
 /* HEADER */
 
 .logo {
-    margin-left: 300px;
+    margin-left: 50px;
     width: 70px;
     height: 70px;
 }
@@ -28,7 +29,6 @@ header {
 
 nav ul {
     width: auto;
-    
     float: right;
 }
 
@@ -107,31 +107,29 @@ nav ul li ul li a:hover {
 
 
 main{
-    height: 2500px;
-    width: 960px;
+    height: auto;
+    width: 60%;
     background-color: white;
     margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.zlava {
+    height: 250px;
+    width: 100%;
 }
 
 .mainlogo {
     background: url(Pozadie.jpeg) no-repeat center;
-    background-size: 960px;
-    width: 100%;
     display: block;
-    height: 250px; 
+    background-size: 100% 100%;
+    height: 100%;
+    
 }
-
-/*.navpas {
-    height: 80px;
-    width: relative;
-    background-color: black;
-    margin-top: -1765px;
-}*/
 
 .produkty {
     display: grid;
-    margin: 80px 30px 30px 70px;
-    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     height: auto;
     width: 100%;
 
@@ -139,6 +137,10 @@ main{
 .produkty p {
     font-size: 20px;
     margin-left: 120px;
+}
+
+.produkty > div {
+    place-self: center;
 }
 
 sup {
@@ -150,6 +152,7 @@ strong {
     font-family: 'Rubik', sans-serif;
     color: red;
 }
+
 h3 {
     font-family: 'Rubik', sans-serif;
     color: black;
@@ -177,9 +180,8 @@ h3 {
    
 }
 
-video {
-    margin-top: 30px;
-    margin-left: 275px;
+.Infotextblock > p {
+    text-align: justify;
 
 }
 
@@ -189,7 +191,7 @@ video {
 
 
 .kontakt {
-    height: 1200px;
+    height: 100%;
 }
 
 
@@ -254,11 +256,8 @@ h4 {
 
 .Infotextblock {
     text-align: left;
-    float: left;
-    clear: left;
-    margin-left: 40px;
-    margin-right: 20px;
-    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
     padding-bottom: 25px;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
@@ -271,6 +270,8 @@ h4 {
 
 
 
+
+
 /* HTML SUBORY SHOP */
 
 
@@ -278,42 +279,17 @@ h4 {
 
 
 .shop {
-    height: 1000px;
+    min-height: 100%;
 }
 
 .shop_img img{
-    padding-left: 50px;
-    padding-top: 35px;
-    float: left;
-    width: 350px;
-
-
+    width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
-.title_tricko{
-    align-content: center;
-    float: right;
-    margin-right: 18%;
-    margin-top: 25px;
-    font-size: 45px;
-    font-family: 'Rubik', sans-serif;
-
-}
-
-.title_mikina{
-    align-content: center;
-    float: right;
-    margin-right: 20%;
-    margin-top: 25px;
-    font-size: 45px;
-    font-family: 'Rubik', sans-serif;
-
-}
-
-.title_podlozka{
-    align-content: center;
-    float: right;
-    margin-right: 7%;
+.title_produkt{
+    text-align: center;
     margin-top: 25px;
     font-size: 45px;
     font-family: 'Rubik', sans-serif;
@@ -323,31 +299,34 @@ h4 {
 .shop_kate{
     font-family: 'Quicksand', sans-serif;
     color: #777;
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
-    margin-left: 400px;
-    padding-top: 120px;
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
     
 
 }
 
 .buytlacitko {
+    display: block;
+    margin: 0 auto;
     box-shadow: 0px 10px 14px -7px rgb(172, 0, 0);
     background:linear-gradient(to bottom, rgb(172, 0, 0) 5%, rgb(172, 0, 0) 100%);
     background-color:rgb(172, 0, 0);
     border-radius:4px;
     border:1px solid rgb(172, 0, 0);
-    display:inline-block;
     cursor:pointer;
     color:#ffffff;
+    text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size:20px;
     font-weight:bold;
     padding:12px 24px;
     text-decoration:none;
     text-shadow:0px 1px 0px rgb(172, 0, 0);
-    margin-left: 200px;
     margin-top: 100px;
+    width: 20%;
 }
 
 .buytlacitko:hover {
@@ -360,8 +339,60 @@ h4 {
     top:1px;
 }
 
-.small {
-    margin-left: 40px;
+#kosik {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "tovar nazov cena";
+}
+
+#kosik h3 {
+    grid-area: nazov;
+    place-self: center;
+
+}
+
+#kosik p {
+    grid-area: cena;
+    place-self: center;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.Kosik {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 10px 14px -7px rgb(172, 0, 0);
+    background:linear-gradient(to bottom, rgb(172, 0, 0) 5%, rgb(172, 0, 0) 100%);
+    background-color:rgb(172, 0, 0);
+    border-radius:4px;
+    border:1px solid rgb(172, 0, 0);
+    cursor:pointer;
+    color:#ffffff;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px rgb(172, 0, 0);
+    margin-top: 10px;
+    width: 3%;
+}
+
+.Kosik {
+    background:linear-gradient(to bottom, rgb(200, 0, 0) 5%, rgb(200, 0, 0) 100%);
+    background-color:rgb(200, 0, 0);
+}
+
+.Kosik {
+    position:relative;
+    top:1px;
+}
+
+.velkost {
+    margin-left: 10px;
     box-shadow: 0px 10px 14px -7px black;
     background:linear-gradient(to bottom, red 5%, red 100%);
     background-color:red;
@@ -370,7 +401,7 @@ h4 {
     cursor:pointer;
     color:#ffffff;
     font-family: 'Rubik', sans-serif;
-    font-size:20px;
+    font-size:17px;
     font-weight:bold;
     padding:12px 24px;
     text-decoration:none;
@@ -378,124 +409,19 @@ h4 {
 
 }
 
-.small:hover {
+.velkost:hover {
     background:linear-gradient(to bottom, black 5%, black 100%);
     background-color:black;
 }
 
-.small:active {
-    position:relative;
-    top:1px;
-}
-
-.medium {
-    box-shadow: 0px 10px 14px -7px black;
-    background:linear-gradient(to bottom, red 5%, red 100%);
-    background-color:red;
-    border-radius:4px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-size:20px;
-    font-weight:bold;
-    padding:12px 24px;
-    text-decoration:none;
-    
-}
-
-.medium:hover {
-    background:linear-gradient(to bottom, black 5%, black 100%);
-    background-color:black;
-}
-
-.medium:active {
-    position:relative;
-    top:1px;
-}
-
-.large {
-    box-shadow: 0px 10px 14px -7px black;
-    background:linear-gradient(to bottom, red 5%, red 100%);
-    background-color:red;
-    border-radius:4px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-size:20px;
-    font-weight:bold;
-    padding:12px 24px;
-    text-decoration:none;
-    
-}
-
-.large:hover {
-    background:linear-gradient(to bottom, black 5%, black 100%);
-    background-color:black;
-}
-
-.large:active {
-    position:relative;
-    top:1px;
-}
-
-.Xlarge {
-    box-shadow: 0px 10px 14px -7px black;
-    background:linear-gradient(to bottom, red 5%, red 100%);
-    background-color:red;
-    border-radius:4px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-size:20px;
-    font-weight:bold;
-    padding:12px 24px;
-    text-decoration:none;
-    
-}
-
-.Xlarge:hover {
-    background:linear-gradient(to bottom, black 5%, black 100%);
-    background-color:black;
-}
-
-.Xlarge:active {
+.velkost:active {
     position:relative;
     top:1px;
 }
 
 
-.XXlarge {
-    box-shadow: 0px 10px 14px -7px black;
-    background:linear-gradient(to bottom, red 5%, red 100%);
-    background-color:red;
-    border-radius:4px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-size:20px;
-    font-weight:bold;
-    padding:12px 24px;
-    text-decoration:none;
-    
-}
-
-.XXlarge:hover {
-    background:linear-gradient(to bottom, black 5%, black 100%);
-    background-color:black;
-}
-
-.XXlarge:active {
-    position:relative;
-    top:1px;
-}
-
-
-.Small {
-    margin-left: 20px;
+.Pvelkost {
+    margin-left: 10px;
     box-shadow: 0px 10px 14px -7px black;
     background:linear-gradient(to bottom, red 5%, red 100%);
     background-color:red;
@@ -506,77 +432,37 @@ h4 {
     font-family: 'Rubik', sans-serif;
     font-size:15px;
     font-weight:bold;
-    padding:9px 18px;
+    padding:12px 24px;
     text-decoration:none;
     
 
 }
 
-.Small:hover {
+.Pvelkost:hover {
     background:linear-gradient(to bottom, black 5%, black 100%);
     background-color:black;
 }
 
-.Small:active {
+.Pvelkost:active {
     position:relative;
     top:1px;
 }
 
-
-.Medium {
-    box-shadow: 0px 10px 14px -7px black;
-    background:linear-gradient(to bottom, red 5%, red 100%);
-    background-color:red;
-    border-radius:4px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-size:15px;
-    font-weight:bold;
-    padding:9px 18px;
-    text-decoration:none;
-    
-
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "Produkt Popis Popis";
+}
+#obrazok {
+    grid-area: Produkt;
 }
 
-.Medium:hover {
-    background:linear-gradient(to bottom, black 5%, black 100%);
-    background-color:black;
-}
-
-.Medium:active {
-    position:relative;
-    top:1px;
+#popis {
+    grid-area: Popis;
 }
 
 
-.Large {
-    box-shadow: 0px 10px 14px -7px black;
-    background:linear-gradient(to bottom, red 5%, red 100%);
-    background-color:red;
-    border-radius:4px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family: 'Rubik', sans-serif;
-    font-size:15px;
-    font-weight:bold;
-    padding:9px 18px;
-    text-decoration:none;
-    
-
-}
-
-.Large:hover {
-    background:linear-gradient(to bottom, black 5%, black 100%);
-    background-color:black;
-}
-
-.Large:active {
-    position:relative;
-    top:1px;
-}
 
 .shop_text{
     margin-top: 30px;
@@ -596,14 +482,65 @@ h6{
 
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px) {
+    .logo {
+        margin-left: 0px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+    
+}
 
-    nav ul li ul {
-        padding-top: 6px;
+@media only screen and (max-width: 1280px) {
+    .shop {
+        grid-template-areas: 
+        "Produkt Produkt Produkt"
+        "Popis Popis Popis ";
     }
 
-    .logo {
-        margin-left: 200px;
+    #obrazok {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #obrazok > div {
+        place-self: center;
+    }
+
+    .shop_img img{
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    main{
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    main{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    main{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .zlava {
+        height: 100px;
+        width: 100%;
     }
 
 }
